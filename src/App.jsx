@@ -14,11 +14,9 @@ function App() {
   const closeModal = (evt) => {
     if (evt.target.ariaLabel === "modal" || evt.target.name === "modal-close") {
       modalRef.current.classList.remove("modal--open");
-      setStyle('close')
+      setStyle("close");
     }
   };
-
-  console.log(modalStyle);
 
   return (
     <div className="App">
